@@ -1,8 +1,10 @@
-package info.sanaebadi.retrofittv;
+package info.sanaebadi.retrofittv.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import info.sanaebadi.retrofittv.R;
 
 public class MainActivity extends AppCompatActivity {
 
