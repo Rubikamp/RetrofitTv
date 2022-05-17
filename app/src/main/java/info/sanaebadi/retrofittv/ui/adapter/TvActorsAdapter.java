@@ -17,7 +17,7 @@ public class TvActorsAdapter extends RecyclerView.Adapter<TvActorsAdapter.TvActo
 
     private List<TvMazeModelItem> tvMazeModelItemList;
 
-    public CityNameAdapter(List<TvMazeModelItem> tvMazeModelItemList) {
+    public TvActorsAdapter(List<TvMazeModelItem> tvMazeModelItemList) {
         this.tvMazeModelItemList = tvMazeModelItemList;
     }
 
@@ -31,7 +31,7 @@ public class TvActorsAdapter extends RecyclerView.Adapter<TvActorsAdapter.TvActo
     @Override
     public void onBindViewHolder(@NonNull TvActorrVieWholder holder, int position) {
         TvMazeModelItem item = tvMazeModelItemList.get(position);
-        Picasso.get().load(item.getPerson().getImage().getMedium()).centerCrop().into(holder.binding.imageviewActor);
+        Picasso.get().load(item.getPerson().getImage().getMedium()).into(holder.binding.imageviewActor);
         holder.binding.textviewActorName.setText(item.getPerson().getName());
         holder.binding.textviewActorCountry.setText(item.getPerson().getCountry().getName());
         holder.binding.textviewActorBirthday.setText(item.getPerson().getBirthday());
