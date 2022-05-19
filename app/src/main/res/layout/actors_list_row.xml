@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_view"
             android:fontFamily="@font/Italict"
-            android:textColor="@android:color/darker_gray"
+            android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@id/imageview_actor"
             app:layout_constraintTop_toBottomOf="@id/textview_actor_gender"
@@ -69,11 +69,76 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_view"
             android:fontFamily="@font/Italict"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@id/imageview_actor"
             app:layout_constraintTop_toBottomOf="@id/textview_actor_birthday"
             tools:text="UK" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_links"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_view"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="180dp"
+            android:fontFamily="@font/Italict"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="@id/imageview_actor"
+            tools:text="tomhardyactorUS@gmail.com"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/Italict"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/textview_actor_url"
+            tools:ignore="MissingConstraints"
+            tools:text="tom_hardy_official" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/Italict"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/textview_actor_name"
+            tools:ignore="MissingConstraints"
+            tools:text="Netflix.com" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15dp"
+            android:fontFamily="@font/Italict"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/textview_actor_links"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="3dp"
+            tools:text="venom" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_actor_deathday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/Italict"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/textview_actor_id"
+            tools:ignore="MissingConstraints"
+            tools:text="still alive" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </com.google.android.material.card.MaterialCardView>
