@@ -17,8 +17,6 @@ import info.sanaebadi.retrofittv.databinding.ActorsListRowBinding;
 import info.sanaebadi.retrofittv.model.TvMazeModelItem;
 
 public class TvActorsAdapter extends RecyclerView.Adapter<TvActorsAdapter.TvActorrVieWholder> {
-    private AppCompatImageView imageView;
-    private AppCompatTextView textView;
     private final List<TvMazeModelItem> tvMazeModelItemList;
 
     public TvActorsAdapter(List<TvMazeModelItem> tvMazeModelItemList) {
@@ -33,7 +31,6 @@ public class TvActorsAdapter extends RecyclerView.Adapter<TvActorsAdapter.TvActo
 
     @Override
     public void onBindViewHolder(@NonNull TvActorrVieWholder holder, int position) {
-        imageView.findViewById(R.id.imageview_actor);
         TvMazeModelItem item = tvMazeModelItemList.get(position);
         Picasso.get().load(item.getPerson().getImage().getMedium()).into(holder.binding.imageviewActor);
         holder.binding.textviewActorName.setText(item.getPerson().getName());
