@@ -6,22 +6,31 @@ public class Person{
 
 	@SerializedName("birthday")
 	private String birthday;
+
 	@SerializedName("country")
 	private Country country;
+
 	@SerializedName("image")
 	private Image image;
+
 	@SerializedName("gender")
 	private String gender;
+
 	@SerializedName("_links")
 	private Links links;
+
 	@SerializedName("name")
 	private String name;
+
 	@SerializedName("id")
 	private int id;
+
 	@SerializedName("deathday")
 	private Object deathday;
+
 	@SerializedName("updated")
 	private int updated;
+
 	@SerializedName("url")
 	private String url;
 

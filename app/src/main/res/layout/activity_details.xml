@@ -1,11 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activity.DetailsActivity">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageview_actor"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_actor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_view"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@id/imageview_actor"
+        app:layout_constraintStart_toStartOf="@id/imageview_actor"
+        app:layout_constraintTop_toBottomOf="@id/imageview_actor"
+        tools:text="Tom Hardy" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_actor_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:text="UK"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_actor_birthday" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_actor_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="1980/4/11"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_actor_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_actor_deathday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:text="still alive"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_actor_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_actor_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Man"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_actor_deathday" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_actor_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:text="tom_hardy_official"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_actor_links" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_actor_links"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:text="tomhardyactorUS@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_actor_country" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_actor_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Netflix.com"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_actor_id" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_actor_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:text="venom"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_actor_id" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

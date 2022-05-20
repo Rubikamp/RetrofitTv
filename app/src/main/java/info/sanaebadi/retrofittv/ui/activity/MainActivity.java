@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import java.util.List;
@@ -32,10 +33,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         configRecyclerView();
         getActorsList();
+
     }
 
     private void configRecyclerView() {
         binding.recyclerviewTv.setHasFixedSize(true);
+        binding.recyclerviewTv.setLayoutManager(new GridLayoutManager(binding.recyclerviewTv.getContext(), 2));
         binding.recyclerviewTv.setLayoutManager(new LinearLayoutManager(MainActivity.this, LinearLayoutManager.VERTICAL, false));
 
     }

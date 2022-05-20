@@ -40,6 +40,9 @@ public class TvActorsAdapter extends RecyclerView.Adapter<TvActorsAdapter.TvActo
         holder.binding.textviewActorCountry.setText(item.getPerson().getCountry().getName());
         holder.binding.textviewActorBirthday.setText(item.getPerson().getBirthday());
         holder.binding.textviewActorGender.setText(item.getPerson().getGender());
+        holder.binding.textviewActorUrl.setText(item.getPerson().getUrl());
+        holder.binding.textviewActorId.setText(item.getPerson().getId());
+        holder.binding.textviewActorDeathday.setText((Integer) item.getPerson().getDeathday());
 
     }
 
