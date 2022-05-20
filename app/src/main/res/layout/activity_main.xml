@@ -8,6 +8,7 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="8dp"
         android:id="@+id/recyclerview_tv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,16 +16,7 @@
         android:padding="@dimen/margin_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <ProgressBar
-        android:id="@+id/progress_circular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        tools:listitem="@layout/actors_list_row"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

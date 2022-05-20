@@ -4,23 +4,26 @@ import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import info.sanaebadi.retrofittv.R;
 import info.sanaebadi.retrofittv.databinding.ActorsListRowBinding;
 import info.sanaebadi.retrofittv.model.TvMazeModelItem;
 
 public class TvActorsAdapter extends RecyclerView.Adapter<TvActorsAdapter.TvActorrVieWholder> {
-
-    private List<TvMazeModelItem> tvMazeModelItemList;
+    private AppCompatImageView imageView;
+    private AppCompatTextView textView;
+    private final List<TvMazeModelItem> tvMazeModelItemList;
 
     public TvActorsAdapter(List<TvMazeModelItem> tvMazeModelItemList) {
         this.tvMazeModelItemList = tvMazeModelItemList;
     }
-
 
     @NonNull
     @Override
@@ -30,12 +33,14 @@ public class TvActorsAdapter extends RecyclerView.Adapter<TvActorsAdapter.TvActo
 
     @Override
     public void onBindViewHolder(@NonNull TvActorrVieWholder holder, int position) {
+        imageView.findViewById(R.id.imageview_actor);
         TvMazeModelItem item = tvMazeModelItemList.get(position);
         Picasso.get().load(item.getPerson().getImage().getMedium()).into(holder.binding.imageviewActor);
         holder.binding.textviewActorName.setText(item.getPerson().getName());
         holder.binding.textviewActorCountry.setText(item.getPerson().getCountry().getName());
         holder.binding.textviewActorBirthday.setText(item.getPerson().getBirthday());
         holder.binding.textviewActorGender.setText(item.getPerson().getGender());
+
     }
 
     @Override
@@ -44,7 +49,7 @@ public class TvActorsAdapter extends RecyclerView.Adapter<TvActorsAdapter.TvActo
     }
 
     static class TvActorrVieWholder extends RecyclerView.ViewHolder {
-        private ActorsListRowBinding binding;
+        private final ActorsListRowBinding binding;
 
 
         public TvActorrVieWholder(ActorsListRowBinding binding) {

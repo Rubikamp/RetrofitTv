@@ -19,7 +19,6 @@
             android:id="@+id/imageview_actor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_view"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -30,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_view"
-            android:fontFamily="@font/Italict"
+            android:fontFamily="@font/italic_font"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@id/imageview_actor"
@@ -43,38 +42,35 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_view"
             android:textColor="@color/black"
-            android:fontFamily="@font/Italict"
+            android:fontFamily="@font/italic_font"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@id/imageview_actor"
             app:layout_constraintTop_toBottomOf="@id/textview_actor_name"
             tools:text="Male" />
-
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textview_actor_birthday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_view"
-            android:fontFamily="@font/Italict"
+            android:fontFamily="@font/italic_font"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@id/imageview_actor"
             app:layout_constraintTop_toBottomOf="@id/textview_actor_gender"
             tools:text="1980/04/11" />
 
-
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textview_actor_country"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_view"
-            android:fontFamily="@font/Italict"
+            android:fontFamily="@font/italic_font"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintEnd_toStartOf="@id/imageview_actor"
             app:layout_constraintTop_toBottomOf="@id/textview_actor_birthday"
             tools:text="UK" />
-
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textview_actor_links"
@@ -83,7 +79,7 @@
             android:layout_margin="@dimen/margin_view"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="180dp"
-            android:fontFamily="@font/Italict"
+            android:fontFamily="@font/italic_font"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintTop_toTopOf="@id/imageview_actor"
@@ -94,7 +90,7 @@
             android:id="@+id/textview_actor_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/Italict"
+            android:fontFamily="@font/italic_font"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/textview_actor_url"
@@ -106,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="17dp"
-            android:fontFamily="@font/Italict"
+            android:fontFamily="@font/italic_font"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/textview_actor_name"
@@ -118,7 +114,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="-15dp"
-            android:fontFamily="@font/Italict"
+            android:fontFamily="@font/italic_font"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/textview_actor_links"
@@ -126,12 +122,11 @@
             tools:layout_editor_absoluteX="3dp"
             tools:text="venom" />
 
-
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textview_actor_deathday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/Italict"
+            android:fontFamily="@font/italic_font"
             android:textColor="@color/black"
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/textview_actor_id"

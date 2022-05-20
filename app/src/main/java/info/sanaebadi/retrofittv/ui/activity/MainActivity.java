@@ -45,16 +45,13 @@ public class MainActivity extends AppCompatActivity {
         listCall.enqueue(new Callback<List<TvMazeModelItem>>() {
             @Override
             public void onResponse(Call<List<TvMazeModelItem>> call, Response<List<TvMazeModelItem>> response) {
-                binding.progressCircular.setVisibility(View.VISIBLE);
                 List<TvMazeModelItem> cityModelItemList = response.body();
                 adapter = new TvActorsAdapter(cityModelItemList);
                 binding.recyclerviewTv.setAdapter(adapter);
-                binding.progressCircular.setVisibility(View.GONE);
             }
 
             @Override
             public void onFailure(Call<List<TvMazeModelItem>> call, Throwable t) {
-                binding.progressCircular.setVisibility(View.GONE);
                 Log.e(TAG, "onFailure: " + t.getMessage());
             }
         });
